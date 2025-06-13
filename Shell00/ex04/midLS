@@ -1,0 +1,1 @@
+ls -1pt | paste -sd ',' - | sed 's/,/, /g'
