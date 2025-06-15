@@ -1,1 +1,14 @@
+# Ignore system files
 .DS_Store
+
+# Ignore editor folders
+.vscode/
+.idea/
+
+# Ignore temporary or log files
+*.log
+*.tmp
+*.swp
+
+# Ignore dotfiles in general (if needed)
+.*
