@@ -1,25 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_alphabet.c                                :+:      :+:    :+:   */
+/*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: skozhan <skozhan@student.42madrid.com >    +#+  +:+       +#+        */
+/*   By: skozhan <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/06/15 17:05:19 by skozhan           #+#    #+#             */
-/*   Updated: 2025/06/15 17:10:25 by skozhan          ###   ########.fr       */
+/*   Created: 2025/06/15 18:33:55 by skozhan           #+#    #+#             */
+/*   Updated: 2025/06/15 18:36:14 by skozhan          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+void	ft_is_negative(int n);
 
-void	ft_print_alphabet(void)
+int main(void)
 {
-	char	letter;
-
-	letter = 'a';
-	while (letter <= 'z')
-	{
-		write(1, &letter, 1);
-		letter++;
-	}
+	ft_is_negative(-5);
+	ft_is_negative(0);
+	ft_is_negative(5);
+	return (0);
 }

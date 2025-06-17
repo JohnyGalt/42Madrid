@@ -1,25 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_alphabet.c                                :+:      :+:    :+:   */
+/*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: skozhan <skozhan@student.42madrid.com >    +#+  +:+       +#+        */
+/*   By: skozhan <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/06/15 17:05:19 by skozhan           #+#    #+#             */
-/*   Updated: 2025/06/15 17:10:25 by skozhan          ###   ########.fr       */
+/*   Created: 2025/06/15 17:53:06 by skozhan           #+#    #+#             */
+/*   Updated: 2025/06/15 17:58:34 by skozhan          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+void	ft_print_reverse_alphabet(void);
 
-void	ft_print_alphabet(void)
-{
-	char	letter;
-
-	letter = 'a';
-	while (letter <= 'z')
-	{
-		write(1, &letter, 1);
-		letter++;
-	}
+int main (void)
+{	
+	ft_print_reverse_alphabet();
+	return (0);
 }
