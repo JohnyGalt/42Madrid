@@ -1,19 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   ft_strlowcase.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: skozhan <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: skozhan <skozhan@student.42madrid.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/06/15 17:53:06 by skozhan           #+#    #+#             */
-/*   Updated: 2025/06/15 17:58:34 by skozhan          ###   ########.fr       */
+/*   Created: 2025/06/28 19:04:05 by skozhan           #+#    #+#             */
+/*   Updated: 2025/06/29 13:33:24 by skozhan          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_print_reverse_alphabet(void);
+char	*ft_strlowcase(char *str)
+{
+	int	i;
 
-int main (void)
-{	
-	ft_print_reverse_alphabet();
-	return (0);
+	i = 0;
+	while (str[i] != '\0')
+	{
+		if (str[i] >= 'A' && str[i] <= 'Z')
+			str[i] += 32;
+		i++;
+	}
+	return (str);
 }

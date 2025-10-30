@@ -1,19 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   ft_strncpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: skozhan <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: skozhan <skozhan@student.42madrid.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/06/15 19:02:24 by skozhan           #+#    #+#             */
-/*   Updated: 2025/06/15 19:03:36 by skozhan          ###   ########.fr       */
+/*   Created: 2025/06/28 17:03:24 by skozhan           #+#    #+#             */
+/*   Updated: 2025/06/29 13:32:26 by skozhan          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_print_comb(void);
-
-int main(void)
+char	*ft_strncpy(char *dest, char *src, unsigned int n)
 {
-	ft_print_comb();
-	return (0);
+	unsigned int	i;
+
+	i = 0;
+	while (src[i] != '\0' && i < n)
+	{
+		dest[i] = src[i];
+		i++;
+	}
+	while (i < n)
+	{
+		dest[i] = '\0';
+		i++;
+	}
+	return (dest);
 }

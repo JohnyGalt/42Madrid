@@ -1,19 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   ft_str_is_uppercase.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: skozhan <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: skozhan <skozhan@student.42madrid.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/06/15 18:14:02 by skozhan           #+#    #+#             */
-/*   Updated: 2025/06/15 18:15:26 by skozhan          ###   ########.fr       */
+/*   Created: 2025/06/28 17:35:50 by skozhan           #+#    #+#             */
+/*   Updated: 2025/06/29 13:33:01 by skozhan          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_print_numbers(void);
-
-int main(void)
+int	ft_str_is_uppercase(char *str)
 {
-	ft_print_numbers();
-	return (0);
+	int	i;
+
+	i = 0;
+	while (str[i] != '\0')
+	{
+		if (str[i] < 'A' || str[i] > 'Z')
+			return (0);
+		i++;
+	}
+	return (1);
 }

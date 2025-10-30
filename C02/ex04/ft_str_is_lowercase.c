@@ -1,19 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   ft_str_is_lowercase.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: skozhan <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: skozhan <skozhan@student.42madrid.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/06/13 21:59:56 by skozhan           #+#    #+#             */
-/*   Updated: 2025/06/13 22:01:47 by skozhan          ###   ########.fr       */
+/*   Created: 2025/06/28 17:27:35 by skozhan           #+#    #+#             */
+/*   Updated: 2025/06/29 13:32:51 by skozhan          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void ft_print_alphabet(void);
-
-int main(void)
+int	ft_str_is_lowercase(char *str)
 {
-	ft_print_alphabet();
-	return (0);
+	int	i;
+
+	i = 0;
+	while (str[i] != '\0')
+	{
+		if (str[i] < 'a' || str[i] > 'z')
+			return (0);
+		i++;
+	}
+	return (1);
 }

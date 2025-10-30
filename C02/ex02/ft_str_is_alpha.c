@@ -1,21 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   ft_str_is_alpha.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: skozhan <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: skozhan <skozhan@student.42madrid.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/06/15 18:33:55 by skozhan           #+#    #+#             */
-/*   Updated: 2025/06/15 18:36:14 by skozhan          ###   ########.fr       */
+/*   Created: 2025/06/28 16:47:02 by skozhan           #+#    #+#             */
+/*   Updated: 2025/06/29 13:32:35 by skozhan          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_is_negative(int n);
-
-int main(void)
+int	ft_str_is_alpha(char *str)
 {
-	ft_is_negative(-5);
-	ft_is_negative(0);
-	ft_is_negative(5);
-	return (0);
+	int	i;
+
+	i = 0;
+	while (str[i] != '\0')
+	{
+		if ((str[i] < 'A' || str[i] > 'Z')
+			&& (str[i] < 'a' || str[i] > 'z'))
+			return (0);
+		i++;
+	}
+	return (1);
 }
